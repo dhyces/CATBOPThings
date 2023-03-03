@@ -15,7 +15,7 @@ import slimeknights.tconstruct.tools.TinkerModifiers;
 public class PrismaticModifier extends Modifier {
   @Override
   public void addVolatileData(@NotNull ToolRebuildContext context, int level, @NotNull ModDataNBT volatileData) {
-    TinkerModifiers.overslime.get().setFriend(volatileData);
+    TinkerModifiers.overslime.get().setFriend(volatileData); 
   }
 
   @Override
