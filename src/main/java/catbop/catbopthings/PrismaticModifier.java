@@ -12,7 +12,7 @@ import slimeknights.tconstruct.library.tools.context.ToolRebuildContext;
 import slimeknights.tconstruct.library.tools.nbt.ModDataNBT;
 import slimeknights.tconstruct.tools.TinkerModifiers;
 
-public class PrismaticModifier extends Modifier { 
+public class PrismaticModifier extends Modifier {
   @Override
   public void addVolatileData(@NotNull ToolRebuildContext context, int level, @NotNull ModDataNBT volatileData) {
     TinkerModifiers.overslime.get().setFriend(volatileData);
@@ -20,6 +20,7 @@ public class PrismaticModifier extends Modifier {
 
   @Override
   public void onInventoryTick(IToolStackView tool, int level, Level world, LivingEntity holder, int itemSlot, boolean isSelected, boolean isCorrectSlot, @NotNull ItemStack stack) {
+    int i = 0; //TODO: REMOVE TESTING ACTIONS
     // update 1 times a second, but skip when active (messes with pulling bow back)
     if (!world.isClientSide && holder.tickCount % 20 == 0 && holder.getUseItem() != stack) {
       // check skylight
