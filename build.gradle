@@ -87,7 +87,7 @@ minecraft {
 
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
-repositories { 
+repositories {
     maven {
         // TCon and Mantle
         name 'DVS1 Maven FS'
