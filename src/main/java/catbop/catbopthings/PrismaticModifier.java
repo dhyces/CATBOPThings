@@ -27,7 +27,7 @@ public class PrismaticModifier extends Modifier {
       int skylight = world.getBrightness(LightLayer.SKY, holder.blockPosition()) - world.getSkyDarken();
       //adds 5 if the tool has the soul light (WIP name)
       //skylight += tool.getModifierLevel(ModiferId) * 5;
-      if (skylight > 5) {
+      if (skylight > 0) {
         // has a 5% chance of restoring each second per level
         if (stack.getDamageValue() < stack.getMaxDamage() && RANDOM.nextFloat() < (level * 0.01 * skylight)) {
           ToolDamageUtil.repair(tool, 1);
