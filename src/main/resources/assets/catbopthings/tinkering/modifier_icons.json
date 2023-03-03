@@ -1,4 +1,4 @@
 {
-  "catbopthings:chipped": "catbopthings:items/upgrade_chip",
-  "catbopthings:chained": "catbopthings:items/prismatic_chain"
+  "catbopthings:chipped": "catbopthings:item/upgrade_chip",
+  "catbopthings:chained": "catbopthings:item/prismatic_chain"
 }
