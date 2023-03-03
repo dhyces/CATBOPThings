@@ -20,7 +20,6 @@ public class PrismaticModifier extends Modifier {
 
   @Override
   public void onInventoryTick(IToolStackView tool, int level, Level world, LivingEntity holder, int itemSlot, boolean isSelected, boolean isCorrectSlot, @NotNull ItemStack stack) {
-    int i = 0; //TODO: REMOVE TESTING ACTIONS
     // update 1 times a second, but skip when active (messes with pulling bow back)
     if (!world.isClientSide && holder.tickCount % 20 == 0 && holder.getUseItem() != stack) {
       // check skylight
@@ -28,7 +27,7 @@ public class PrismaticModifier extends Modifier {
       int skylight = world.getBrightness(LightLayer.SKY, holder.blockPosition()) - world.getSkyDarken();
       //adds 5 if the tool has the soul light (WIP name)
       //skylight += tool.getModifierLevel(ModiferId) * 5;
-      if (skylight > 0) {
+      if (skylight > 5) {
         // has a 5% chance of restoring each second per level
         if (stack.getDamageValue() < stack.getMaxDamage() && RANDOM.nextFloat() < (level * 0.01 * skylight)) {
           ToolDamageUtil.repair(tool, 1);
