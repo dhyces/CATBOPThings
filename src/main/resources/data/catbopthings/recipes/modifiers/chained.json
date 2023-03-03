@@ -1,0 +1,17 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "item": "catbopthings:prismatic_chain"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  },
+  "allow_crystal": false,
+  "result": {
+    "name": "catbopthings:chained",
+    "level": 1
+  },
+  "max_level": 1
+}

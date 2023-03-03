@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:diamond_block",
+  "type": "plain",
+  "light_emission": 10,
+  "material": "metal",
+  "requires_tool_for_drops": true,
+  "explosion_resistance": 16000,
+  "item": {
+    "group": "catbopthings:catbopthings"
+  }  
+}

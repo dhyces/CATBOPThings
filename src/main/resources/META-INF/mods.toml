@@ -1,0 +1,35 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+issueTrackerURL=""
+license="MIT"
+[[mods]]
+    modId="catbopthings"
+    version="${file.jarVersion}"
+    displayName="CATBOP Things"
+    description='''
+    A mod for Create And Tinkers Building Oriented Pack
+    '''
+[[dependencies.catbopthings]]
+    modId="forge"
+    mandatory=true
+    versionRange="[40.1.40,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.catbopthings]]
+    modId="tconstruct"
+    mandatory=true
+    versionRange="[3.6.3.111,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.catbopthings]]
+    modId="jsonthings"
+    mandatory=true
+    versionRange="[0.4.8,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.catbopthings]]
+    modId="create"
+    mandatory=true
+    versionRange="[0.5.0.i,)"
+    ordering="NONE"
+    side="BOTH"

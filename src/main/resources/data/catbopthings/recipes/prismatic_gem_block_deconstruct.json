@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "catbopthings:prismatic_gem_block"
+    }
+  ],
+  "result":
+  {
+    "item": "catbopthings:prismatic_gem",
+    "count": 9
+  }
+}

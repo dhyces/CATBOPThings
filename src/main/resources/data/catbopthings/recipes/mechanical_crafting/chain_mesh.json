@@ -1,0 +1,16 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "CCC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:chain"
+    }
+  },
+  "result": {
+    "item": "catbopthings:chain_mesh", 
+    "count": 2
+  },
+  "acceptMirrored": true
+}

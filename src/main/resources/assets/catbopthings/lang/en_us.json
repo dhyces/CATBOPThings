@@ -1,0 +1,19 @@
+{
+  "item.catbopthings.chain_mesh": "Chain Mesh",
+  "block.catbopthings.prismatic_gem_block": "Block of Prismatic Gem",
+
+  "item.catbopthings.upgrade_chip": "Upgrade Chip",
+  "modifier.catbopthings.chipped": "Chipped",
+  "modifier.catbopthings.chipped.flavor": "Upgraded with Electronics!",
+  "modifier.catbopthings.chipped.description": "The High Tech Upgrade Chip adds an aditional upgrade slot to your gear.",
+
+  "item.catbopthings.prismatic_chain": "Prismatic Chain",
+  "modifier.catbopthings.chained": "Chained",
+  "modifier.catbopthings.chained.flavor": "Proof of Industrial Power!",
+  "modifier.catbopthings.chained.description": "The Prismatic Chain binds two aditional upgrade slots to your gear.",
+
+  "item.catbopthings.prismatic_gem": "Prismatic Gem",
+  "modifier.catbopthings.prismatic": "Prismatic",
+  "modifier.catbopthings.prismatic.flavor": "TBD",
+  "modifier.catbopthings.prismatic.description": "TBD"
+}

@@ -1,0 +1,33 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "  R  ",
+    "ZEPEZ",
+    "ZSSSZ",
+    " BBB "
+  ],
+  "key": {
+    "E": {
+      "item": "create:electron_tube"
+    },
+    "P": {
+      "item": "create:precision_mechanism"
+    },
+    "S": {
+      "item": "create:sturdy_sheet"
+    },
+    "R": {
+      "item": "create_things_and_misc:rose_quartz_sheet"
+    },
+    "B": {
+    "tag": "forge:plates/gold"
+    },
+    "Z": {
+    "tag": "forge:ingots/zinc"
+    }
+  },
+  "result": {
+    "item": "catbopthings:upgrade_chip"
+  },
+  "acceptMirrored": true
+}

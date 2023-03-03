@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "catbopthings:block/prismatic_gem_block"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "item": "catbopthings:upgrade_chip"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  },
+  "allow_crystal": false,
+  "result": {
+    "name": "catbopthings:chipped",
+    "level": 1
+  },
+  "max_level": 1
+}

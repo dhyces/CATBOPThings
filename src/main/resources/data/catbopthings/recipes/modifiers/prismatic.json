@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "item": "catbopthings:prismatic_gem"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  },
+  "slots": {
+    "upgrades": 1
+  },
+  "allow_crystal": false,
+  "result": {
+    "name": "catbopthings:prismatic",
+    "level": 1
+  },
+  "max_level": 1
+}
