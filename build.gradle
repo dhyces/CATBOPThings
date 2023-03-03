@@ -3,14 +3,14 @@ plugins {
     id 'org.spongepowered.mixin' version '0.7.+'
 }
 
-version = '1.2.0'
+version = "${mod_version}"
 group = 'catbop'
-archivesBaseName = 'catbopthings'
+archivesBaseName = "${mod_id}-${minecraft_version}"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 minecraft {
-    mappings channel: 'official', version: '1.18.2'
+    mappings channel: "${mappings_provider}", version: "${mappings_version}"
 
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg') // Currently, this location cannot be changed from the default.
 
@@ -118,7 +118,7 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.18.2-40.2.1'
+    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
     implementation fg.deobf("slimeknights.mantle:Mantle:${minecraft_version}-${mantle_build}")
     implementation fg.deobf("slimeknights.tconstruct:TConstruct:${minecraft_version}-${tinkers_build}")
@@ -128,9 +128,9 @@ dependencies {
     compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"))
     compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}"))
     runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
-    runtimeOnly fg.deobf("curse.maven:jsonthings-541617:4391289")
-    runtimeOnly fg.deobf("curse.maven:rhino-416294:4069880")
-    runtimeOnly fg.deobf("curse.maven:create_things_and_misc-652202:4084302")
+    runtimeOnly fg.deobf("curse.maven:jsonthings-541617:${jsonthings_fileid}")
+    runtimeOnly fg.deobf("curse.maven:rhino-416294:${rhino_fileid}")
+    runtimeOnly fg.deobf("curse.maven:create_things_and_misc-652202:${ctam_fileid}")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
@@ -143,12 +143,12 @@ mixin {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "examplemod",
-                "Specification-Vendor"    : "examplemodsareus",
+                "Specification-Title"     : "${mod_id}",
+                "Specification-Vendor"    : "catbop",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
-                "Implementation-Vendor"   : "examplemodsareus",
+                "Implementation-Vendor"   : "catbop",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
