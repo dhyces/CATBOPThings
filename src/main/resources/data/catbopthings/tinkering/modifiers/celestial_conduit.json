@@ -1,6 +1,6 @@
 {
   "tconstruct:stat_boost",
-  "level_display": "tconstruct:default",
+  "level_display": "tconstruct:single_level",
   "always_show": true,
   "rarity": "epic",
   "stats": [

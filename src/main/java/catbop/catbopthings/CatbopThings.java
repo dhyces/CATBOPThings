@@ -14,6 +14,6 @@ public class CatbopThings {
     }
 
     private void registerModifier(ModifierManager.ModifierRegistrationEvent event) {
-        event.registerStatic(new ModifierId(MODID, "prismatic"), new PrismaticModifier());
+        event.registerStatic(new ModifierId(MODID, "prismite"), new PrismiteModifier());
     }
 }

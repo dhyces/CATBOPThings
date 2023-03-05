@@ -6,7 +6,7 @@
     },
     {
       "item": "catbopthings:prismite"
-    },
+    }
   ],
   "tools": [
     {
@@ -17,7 +17,7 @@
     "upgrades": 1
   },
   "requirements": {
-    "name": "tconstruct:luck",
+    "name": "catbopthings:prismite",
     "level": 1,
     "error": "recipe.catbopthings.modifier.prismite_error"
   },

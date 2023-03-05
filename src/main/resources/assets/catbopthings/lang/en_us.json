@@ -1,9 +1,10 @@
 {
   "item.catbopthings.chain_mesh": "Chain Mesh",
   "block.catbopthings.prismatic_gem_block": "Block of Prismite",
+  "block.catbopthings.celesteel_block": "Block of Celesteel",
 
   "item.catbopthings.upgrade_chip": "Upgrade Chip",
-  "modifier.catbopthings.chipped": "Chip tuned",
+  "modifier.catbopthings.chipped": "Chip Tuned",
   "modifier.catbopthings.chipped.flavor": "Enhanced with Electronics!",
   "modifier.catbopthings.chipped.description": "The High Tech Upgrade Chip tunes an aditional upgrade slot to your tool.",
 
@@ -17,10 +18,10 @@
   "modifier.catbopthings.celesteel.flavor": "Imbued with Celestial Power!",
   "modifier.catbopthings.celesteel.description": "Buffs several stats similarly to netherite.",
 
-  "item.catbopthings.prismatic_gem": "Prismite",
-  "modifier.catbopthings.prismatic": "Prismite",
-  "modifier.catbopthings.prismatic.flavor": "Restored by Celestial Light!",
-  "modifier.catbopthings.prismatic.description": "The Light that burns monsters restores your tool's durability."
+  "item.catbopthings.prismite": "Prismite",
+  "modifier.catbopthings.prismite": "Prismite",
+  "modifier.catbopthings.prismite.flavor": "Restored by Celestial Light!",
+  "modifier.catbopthings.prismite.description": "The Light that burns monsters restores your tool's durability.",
 
   "recipe.catbopthings.modifier.conduit_requirements": "Requires Prismite and Celesteel"
 }
