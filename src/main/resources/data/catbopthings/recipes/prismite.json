@@ -1,0 +1,35 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "alexsmobs:rainbow_jelly"
+    },
+    {
+      "item": "alexsmobs:rainbow_jelly"
+    },
+    {
+      "item": "alexsmobs:rainbow_jelly"
+    },
+    {
+      "item": "tconstruct:earth_slime_crystal"
+    },
+    {
+      "item": "tconstruct:sky_slime_crystal"
+    },
+    {
+      "item": "tconstruct:ichor_slime_crystal"
+    },
+    {
+      "item": "tconstruct:ender_slime_crystal"
+    },
+    {
+      "item": "createaddition:diamond_grit"
+    }
+  ],
+  "results": [
+    {
+      "item": "catbopthings:prismite"
+    }
+  ],
+  "heatRequirement": "superheated"
+}

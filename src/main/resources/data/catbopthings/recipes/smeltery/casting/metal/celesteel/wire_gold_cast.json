@@ -1,0 +1,23 @@
+{
+  "type": "tconstruct:casting_table",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:wires/celesteel",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "cast": {
+    "tag": "tconstruct:casts/multi_use/wire"
+  },
+  "fluid": {
+    "tag": "forge:molten_celesteel",
+    "amount": 45
+  },
+  "result": {
+    "tag": "forge:wires/celesteel"
+  },
+  "cooling_time": 60
+}

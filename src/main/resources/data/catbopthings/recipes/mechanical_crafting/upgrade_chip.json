@@ -2,9 +2,9 @@
   "type": "create:mechanical_crafting",
   "pattern": [
     "  R  ",
-    "ZEPEZ",
-    "ZSSSZ",
-    " BBB "
+    "SEPES",
+    "SBBBS",
+    " GGG "
   ],
   "key": {
     "E": {
@@ -17,13 +17,13 @@
       "item": "create:sturdy_sheet"
     },
     "R": {
-      "item": "create_things_and_misc:rose_quartz_sheet"
+      "tag": "forge:ingots/rose_gold"
+    },
+    "G": {
+      "tag": "forge:plates/gold"
     },
     "B": {
-    "tag": "forge:plates/gold"
-    },
-    "Z": {
-    "tag": "forge:ingots/zinc"
+      "tag": "forge:ingots/brass"
     }
   },
   "result": {

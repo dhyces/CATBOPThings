@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "catbopthings:prismite"
+    },
+    {
+      "item": "catbopthings:prismite"
+    },
+    {
+      "item": "catbopthings:prismite"
+    },
+    {
+      "item": "catbopthings:prismite"
+    },
+    {
+      "item": "catbopthings:prismite"
+    },
+    {
+      "item": "catbopthings:prismite"
+    },
+    {
+      "item": "catbopthings:prismite"
+    },
+    {
+      "item": "catbopthings:prismite"
+    },
+    {
+      "item": "catbopthings:prismite"
+    }
+  ],
+  "result":
+  {
+    "item": "catbopthings:prismite_block"
+  }
+}

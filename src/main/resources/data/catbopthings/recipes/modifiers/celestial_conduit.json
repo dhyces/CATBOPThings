@@ -1,0 +1,34 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "item": "catbopthings:celestial_conduit"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  },
+  "slots": {
+    "abilities": 1
+  },
+  "requirements": {
+    "options": [
+      {
+        "name": "catbopthings:prismite",
+        "level": 1
+      },
+      {
+        "name": "catbopthings:celesteel",
+        "level": 1
+      }
+    ],
+    "matches_needed": 2,
+    "error": "recipe.catbopthings.modifier.conduit_requirements"
+  },
+  "allow_crystal": true,
+  "result": {
+    "name": "catbopthings:celestial_conduit",
+    "level": 1
+  },
+  "max_level": 1
+}

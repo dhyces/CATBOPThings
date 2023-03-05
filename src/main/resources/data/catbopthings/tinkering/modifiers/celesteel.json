@@ -1,0 +1,34 @@
+{
+  "type": "tconstruct:stat_boost",
+  "level_display": "tconstruct:single_level",
+  "rarity": "rare",
+  "stats": [
+    {
+      "stat": "tconstruct:armor_toughness",
+      "type": "add",
+      "value": 0.5
+    },
+    {
+      "stat": "tconstruct:attack_damage",
+      "type": "add",
+      "value": 1.0
+    },
+    {
+      "stat": "tconstruct:mining_speed",
+      "type": "multiply_base",
+      "value": 0.10
+    },
+    {
+      "stat": "tconstruct:harvest_tier",
+      "value": "minecraft:netherite"
+    },
+    {
+      "stat": "tconstruct:velocity",
+      "type": "multiply_base",
+      "value": 0.05
+    }
+  ],
+  "flags": [
+    "tconstruct:indestructible"
+  ]
+}

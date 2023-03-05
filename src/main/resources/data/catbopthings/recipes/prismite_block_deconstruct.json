@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "catbopthings:prismite_block"
+    }
+  ],
+  "result":
+  {
+    "item": "catbopthings:prismite",
+    "count": 9
+  }
+}

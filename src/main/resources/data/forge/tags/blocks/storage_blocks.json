@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:storage_blocks/celesteel",
+    "#forge:storage_blocks/prismite"
+  ]
+}

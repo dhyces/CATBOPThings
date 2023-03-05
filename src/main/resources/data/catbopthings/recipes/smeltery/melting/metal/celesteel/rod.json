@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "value": {
+        "tag": "forge:rods/celesteel",
+        "type": "forge:tag_empty"
+      },
+      "type": "forge:not"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:rods/celesteel"
+  },
+  "result": {
+    "fluid": "catbopthings:molten_celesteel",
+    "amount": 45
+  },
+  "temperature": 1300,
+  "time": 20
+}

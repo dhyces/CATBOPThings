@@ -1,0 +1,28 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "  CSP",
+    "  SNS",
+    "CSPSC",
+    "SNS  ",
+    "PSC  "
+  ],
+  "key": {
+    "S": {
+      "item": "create:sturdy_sheet"
+    },
+    "C": {
+      "item": "catbopthings:celesteel_ingot"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "P": {
+      "item": "catbopthings:prismite"
+    }
+  },
+  "result": {
+    "item": "catbopthings:celestial_conduit"
+  },
+  "acceptMirrored": true
+}

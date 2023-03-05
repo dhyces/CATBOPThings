@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "catbopthings:prismite"
+    ]
+  },
+  "criteria": {
+    "has_rainbow_jelly": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "alexsmobs:rainbow_jelly"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:prismatic_gem"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_rainbow_jelly",
+      "has_the_recipe"
+    ]
+  ]
+}

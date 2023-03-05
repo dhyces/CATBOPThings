@@ -1,0 +1,22 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "item": "catbopthings:prismite"
+    }
+  ],
+  "tools": [
+    {
+      "tag": "tconstruct:modifiable"
+    }
+  ],
+  "slots": {
+    "upgrades": 1
+  },
+  "allow_crystal": false,
+  "result": {
+    "name": "catbopthings:prismite",
+    "level": 1
+  },
+  "max_level": 1
+}

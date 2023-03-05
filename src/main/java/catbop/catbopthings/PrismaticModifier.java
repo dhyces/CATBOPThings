@@ -26,11 +26,12 @@ public class PrismaticModifier extends Modifier {
             // check skylight
             // note this may go negative, that is not a problem
             int skylight = world.getBrightness(LightLayer.SKY, holder.blockPosition()) - world.getSkyDarken();
-            //adds 5 if the tool has the soul light (WIP name)
-            //skylight += tool.getModifierLevel(ModiferId) * 5;
-            if (skylight > 0) {
-                // has a 5% chance of restoring each second per level
-                if (stack.getDamageValue() < stack.getMaxDamage() && RANDOM.nextFloat() < (level * 0.01 * skylight)) {
+            // 1 if the celestial conduit is applied, 0 otherwise. Level is never >1
+            int conduitboost = tool.getModifierLevel(catbopthings:celestial_conduit);
+            if ((skylight + conduitboost) > 0) {
+                // has a chance of restoring durability depending on several factors
+                // in full sun, 1 level prismatic = overgrowth, 3 levels + conduit = 5x overgrowth
+                if (stack.getDamageValue() < stack.getMaxDamage() && RANDOM.nextFloat() < (((level/3) * 0.01 * skylight) + ((level/3) * 0.10 * conduitboost)) {
                     ToolDamageUtil.repair(tool, 1);
                 }
             }

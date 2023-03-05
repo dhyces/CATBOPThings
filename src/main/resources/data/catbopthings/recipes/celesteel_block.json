@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "catbopthings:celesteel_ingot"
+    },
+    {
+      "item": "catbopthings:celesteel_ingot"
+    },
+    {
+      "item": "catbopthings:celesteel_ingot"
+    },
+    {
+      "item": "catbopthings:celesteel_ingot"
+    },
+    {
+      "item": "catbopthings:celesteel_ingot"
+    },
+    {
+      "item": "catbopthings:celesteel_ingot"
+    },
+    {
+      "item": "catbopthings:celesteel_ingot"
+    },
+    {
+      "item": "catbopthings:celesteel_ingot"
+    },
+    {
+      "item": "catbopthings:celesteel_ingot"
+    }
+  ],
+  "result":
+  {
+    "item": "catbopthings:celesteel_block"
+  }
+}

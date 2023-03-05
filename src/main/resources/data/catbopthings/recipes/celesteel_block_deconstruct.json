@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "catbopthings:celesteel_block"
+    }
+  ],
+  "result":
+  {
+    "item": "catbopthings:celesteel_ingot",
+    "count": 9
+  }
+}

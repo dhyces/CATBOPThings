@@ -1,19 +1,26 @@
 {
   "item.catbopthings.chain_mesh": "Chain Mesh",
-  "block.catbopthings.prismatic_gem_block": "Block of Prismatic Gem",
+  "block.catbopthings.prismatic_gem_block": "Block of Prismite",
 
   "item.catbopthings.upgrade_chip": "Upgrade Chip",
-  "modifier.catbopthings.chipped": "Chipped",
-  "modifier.catbopthings.chipped.flavor": "Upgraded with Electronics!",
-  "modifier.catbopthings.chipped.description": "The High Tech Upgrade Chip adds an aditional upgrade slot to your gear.",
+  "modifier.catbopthings.chipped": "Chip tuned",
+  "modifier.catbopthings.chipped.flavor": "Enhanced with Electronics!",
+  "modifier.catbopthings.chipped.description": "The High Tech Upgrade Chip tunes an aditional upgrade slot to your tool.",
 
-  "item.catbopthings.prismatic_chain": "Prismatic Chain",
-  "modifier.catbopthings.chained": "Chained",
-  "modifier.catbopthings.chained.flavor": "Proof of Industrial Power!",
-  "modifier.catbopthings.chained.description": "The Prismatic Chain binds two aditional upgrade slots to your gear.",
+  "item.catbopthings.celestial_conduit": "Celestial Conduit",
+  "modifier.catbopthings.celestial_conduit": "Celestial Conduit",
+  "modifier.catbopthings.celestial_conduit.flavor": "Conducts Celestial Light!",
+  "modifier.catbopthings.celestial_conduit.description": "The Celestial Conduit imbues your tool with the Light that burns monsters.",
 
-  "item.catbopthings.prismatic_gem": "Prismatic Gem",
-  "modifier.catbopthings.prismatic": "Prismatic",
-  "modifier.catbopthings.prismatic.flavor": "TBD",
-  "modifier.catbopthings.prismatic.description": "TBD"
+  "item.catbopthings.celesteel_ingot": "Celesteel ingot",
+  "modifier.catbopthings.celesteel": "Celesteel",
+  "modifier.catbopthings.celesteel.flavor": "Imbued with Celestial Power!",
+  "modifier.catbopthings.celesteel.description": "Buffs several stats similarly to netherite.",
+
+  "item.catbopthings.prismatic_gem": "Prismite",
+  "modifier.catbopthings.prismatic": "Prismite",
+  "modifier.catbopthings.prismatic.flavor": "Restored by Celestial Light!",
+  "modifier.catbopthings.prismatic.description": "The Light that burns monsters restores your tool's durability."
+
+  "recipe.catbopthings.modifier.conduit_requirements": "Requires Prismite and Celesteel"
 }

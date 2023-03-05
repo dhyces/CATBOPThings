@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:nuggets/celesteel"
+  },
+  "result": {
+    "fluid": "catbopthings:molten_celesteel",
+    "amount": 10
+  },
+  "temperature": 1300,
+  "time": 30
+}

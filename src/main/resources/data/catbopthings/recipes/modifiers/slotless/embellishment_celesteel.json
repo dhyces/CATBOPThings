@@ -1,0 +1,22 @@
+{
+  "type": "tconstruct:swappable_modifier",
+  "inputs": [
+    {
+      "tag": "forge:nuggets/celesteel"
+    },
+    {
+      "tag": "forge:nuggets/celesteel"
+    },
+    {
+      "tag": "forge:nuggets/celesteel"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable/embellishment/metal"
+  },
+  "allow_crystal": false,
+  "result": {
+    "name": "tconstruct:embellishment",
+    "value": "catbopthings:celesteel"
+  }
+}

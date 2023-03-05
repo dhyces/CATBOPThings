@@ -1,0 +1,25 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "item": "catbopthings:celesteel_ingot"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  },
+  "slots": {
+    "upgrades": 1
+  },
+  "requirements": {
+    "tag": "tconstruct:gem",
+    "level": 1,
+    "error": "recipe.tconstruct.modifier.netherite_requirements"
+  },
+  "allow_crystal": true,
+  "result": {
+    "name": "catbopthings:celesteel",
+    "level": 1
+  },
+  "max_level": 1
+}

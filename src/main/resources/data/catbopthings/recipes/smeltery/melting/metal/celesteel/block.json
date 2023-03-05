@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:storage_blocks/celesteel"
+  },
+  "result": {
+    "fluid": "catbopthings:molten_celesteel",
+    "amount": 810
+  },
+  "temperature": 1300,
+  "time": 240
+}

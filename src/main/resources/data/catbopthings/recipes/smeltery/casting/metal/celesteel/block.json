@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:casting_basin",
+  "fluid": {
+    "tag": "forge:molten_celesteel",
+    "amount": 810
+  },
+  "result": "catbopthings:celesteel_block",
+  "cooling_time": 230
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "minecraft:netherite_block",
+  "type": "plain",
+  "material": "metal",
+  "map_color": "COLOR_WHITE",
+  "requires_tool_for_drops": true,
+  "explosion_resistance": 16000,
+  "destroy_time": 60,
+  "sound_type": "minecraft:ancient_debris",
+  "item": {
+    "group": "carbopthings:catbopthings"
+  }  
+}

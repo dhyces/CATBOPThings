@@ -8,7 +8,7 @@
   "tools": {
     "tag": "tconstruct:modifiable"
   },
-  "allow_crystal": false,
+  "allow_crystal": true,
   "result": {
     "name": "catbopthings:chipped",
     "level": 1
