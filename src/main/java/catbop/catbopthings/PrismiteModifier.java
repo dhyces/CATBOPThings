@@ -34,7 +34,7 @@ public class PrismiteModifier extends Modifier {
             if ((skylight + conduitboost) > 0) {
                 // has a chance of restoring durability depending on several factors
                 // its kinda complicated but you can probably get a general idea by reading the equations
-                if (stack.getDamageValue() < stack.getMaxDamage() && RANDOM.nextFloat() < (((level/3.0) * 0.005 * skylight) + ((level/3.0) * 0.05 * conduitboost))) {
+                if (stack.getDamageValue() < stack.getMaxDamage() && RANDOM.nextFloat() < (((level/3.0) * 0.01 * skylight) + ((level/3.0) * 0.05 * conduitboost))) {
                     ToolDamageUtil.repair(tool, (1 + celesteelboost));
                 }
             }
