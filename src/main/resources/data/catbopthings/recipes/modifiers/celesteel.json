@@ -12,8 +12,17 @@
     "upgrades": 1
   },
   "requirements": {
-    "tag": "tconstruct:gems",
-    "level": 1,
+    "options": [
+      {
+        "name": "catbopthings:prismite",
+        "level": 1
+      },
+      {
+        "tag": "tconstrucct:gems",
+        "level": 1
+      }
+    ],
+    "matches_needed": 1,
     "error": "recipe.catbopthings.modifier.celesteel_requirements"
   },
   "allow_crystal": true,

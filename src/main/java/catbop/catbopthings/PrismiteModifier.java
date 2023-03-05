@@ -31,7 +31,7 @@ public class PrismiteModifier extends Modifier {
             int conduitboost = tool.getModifierLevel(new ModifierId(CatbopThings.MODID, "celestial_conduit"));
             // same as above but for celesteel
             int celesteelboost = tool.getModifierLevel(new ModifierId(CatbopThings.MODID, "celesteel"));
-            if ((skylight + conduitboost) > 0) {
+            if ((skylight > 0) || (conduitboost > 0)) {
                 // has a chance of restoring durability depending on several factors
                 // its kinda complicated but you can probably get a general idea by reading the equations
                 if (stack.getDamageValue() < stack.getMaxDamage() && RANDOM.nextFloat() < (((level/3.0) * 0.01 * skylight) + ((level/3.0) * 0.05 * conduitboost))) {

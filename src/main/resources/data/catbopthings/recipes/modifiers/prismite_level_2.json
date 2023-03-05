@@ -19,7 +19,7 @@
   "requirements": {
     "name": "catbopthings:prismite",
     "level": 1,
-    "error": "recipe.catbopthings.modifier.prismite_error"
+    "error": "recipe.catbopthings.modifier.prismite_requirements"
   },
   "allow_crystal": false,
   "result": {
