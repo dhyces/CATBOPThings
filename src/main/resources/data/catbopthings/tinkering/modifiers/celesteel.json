@@ -11,7 +11,7 @@
     {
       "stat": "tconstruct:attack_damage",
       "type": "add",
-      "value": 1.0
+      "value": 0.75
     },
     {
       "stat": "tconstruct:mining_speed",
@@ -25,6 +25,11 @@
     {
       "stat": "tconstruct:velocity",
       "type": "multiply_base",
+      "value": 0.05
+    },
+    {
+      "stat": "tconstruct:accuracy",
+      "type": "add",
       "value": 0.05
     }
   ],

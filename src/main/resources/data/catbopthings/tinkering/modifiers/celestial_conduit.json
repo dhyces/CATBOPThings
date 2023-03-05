@@ -1,9 +1,23 @@
 {
-  "type": "tconstruct:extra_slot",
+  "tconstruct:stat_boost",
   "level_display": "tconstruct:default",
   "always_show": true,
   "rarity": "epic",
-  "slots": {
-    "upgrades": 0
-  }
+  "stats": [
+    {
+      "stat": "tconstruct:armor_toughness",
+      "type": "add",
+      "value": 0.25
+    },
+    {
+      "stat": "tconstruct:attack_damage",
+      "type": "add",
+      "value": 0.25
+    },
+    {
+      "stat": "tconstruct:mining_speed",
+      "type": "multiply_base",
+      "value": 0.10
+    }
+  ]
 }

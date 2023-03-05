@@ -14,7 +14,7 @@
   "requirements": {
     "tag": "tconstruct:gem",
     "level": 1,
-    "error": "recipe.tconstruct.modifier.netherite_requirements"
+    "error": "recipe.catbopthings.modifier.celesteel_requirements"
   },
   "allow_crystal": true,
   "result": {
