@@ -4,9 +4,8 @@
     "group": "catbopthings:catbopthings"
   },
   "block": true,
-  "still_texture": "tconstruct:block/fluid/molten/still",
-  "flowing_texture": "tconstruct:block/fluid/molten/flowing",
-  "color": [80,80,80],
+  "still_texture": "tconstruct:block\fluid\celesteel\still",
+  "flowing_texture": "tconstruct:block\fluid\celesteel\flowing",
   "density": 2000,
   "luminosity": 8,
   "temperature": 1300,

@@ -1,4 +1,6 @@
 {
   "catbopthings:chipped": "catbopthings:item/upgrade_chip",
-  "catbopthings:chained": "catbopthings:item/prismatic_chain"
+  "catbopthings:celesteel": "catbopthings:item/celesteel_ingot",
+  "catbopthings:prismite": "catbopthings:item/prismite",
+  "catbopthings:celestial_conduit": "catbopthings:item/celestial_conduit"
 }
