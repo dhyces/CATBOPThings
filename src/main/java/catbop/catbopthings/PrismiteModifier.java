@@ -27,13 +27,15 @@ public class PrismiteModifier extends Modifier {
             // check skylight
             // note this may go negative, that is not a problem
             int skylight = world.getBrightness(LightLayer.SKY, holder.blockPosition()) - world.getSkyDarken();
-            // 1 if the celestial conduit is applied, 0 otherwise. Level is never >1
+            // 1 if the celestial conduit is applied, 0 otherwise. Lvl will never be >1
             int conduitboost = tool.getModifierLevel(new ModifierId(CatbopThings.MODID, "celestial_conduit"));
+            // same as above but for celesteel
+            int celesteelboost = tool.getModifierLevel(new ModifierId(CatbopThings.MODID, "celesteel"));
             if ((skylight + conduitboost) > 0) {
                 // has a chance of restoring durability depending on several factors
-                // in full sun, 1 level prismatic = overgrowth, 3 levels + conduit = 5x overgrowth
-                if (stack.getDamageValue() < stack.getMaxDamage() && RANDOM.nextFloat() < (((level/3.0) * 0.01 * skylight) + ((level/3.0) * 0.10 * conduitboost))) {
-                    ToolDamageUtil.repair(tool, 1);
+                // its kinda complicated but you can probably get a general idea by reading the equations
+                if (stack.getDamageValue() < stack.getMaxDamage() && RANDOM.nextFloat() < (((level/3.0) * 0.005 * skylight) + ((level/3.0) * 0.05 * conduitboost))) {
+                    ToolDamageUtil.repair(tool, (1 + celesteelboost));
                 }
             }
         }

@@ -1,5 +1,8 @@
 {
   "modifier.catbopthings": {
-    "prismatic": "#FDE4FD"
+    "chipped": "#A07080",
+    "prismatic": "#FDE4FD",
+    "celesteel": "#FDFDE4",
+    "celestial_conduit": "#807088"
   }
 }

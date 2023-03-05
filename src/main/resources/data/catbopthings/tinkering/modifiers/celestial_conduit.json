@@ -1,5 +1,5 @@
 {
-  "tconstruct:stat_boost",
+  "type": "tconstruct:stat_boost",
   "level_display": "tconstruct:single_level",
   "always_show": true,
   "rarity": "epic",
@@ -17,7 +17,7 @@
     {
       "stat": "tconstruct:mining_speed",
       "type": "multiply_base",
-      "value": 0.10
+      "value": 0.05
     }
   ]
 }

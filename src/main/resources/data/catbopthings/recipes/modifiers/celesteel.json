@@ -12,7 +12,7 @@
     "upgrades": 1
   },
   "requirements": {
-    "tag": "tconstruct:gem",
+    "tag": "tconstruct:gems",
     "level": 1,
     "error": "recipe.catbopthings.modifier.celesteel_requirements"
   },
