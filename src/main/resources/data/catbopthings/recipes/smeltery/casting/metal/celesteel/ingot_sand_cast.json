@@ -8,6 +8,6 @@
     "tag": "forge:molten_celesteel",
     "amount": 90
   },
-  "result": "minecraft:celesteel_ingot",
+  "result": "catbopthings:celesteel_ingot",
   "cooling_time": 90
 }
