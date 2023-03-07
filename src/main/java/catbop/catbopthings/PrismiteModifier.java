@@ -1,5 +1,6 @@
 package catbop.catbopthings;
 
+import net.minecraft.util.Mth;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LightLayer;
@@ -28,14 +29,16 @@ public class PrismiteModifier extends Modifier {
             // note this may go negative, that is not a problem
             int skylight = world.getBrightness(LightLayer.SKY, holder.blockPosition()) - world.getSkyDarken();
             // 1 if the celestial conduit is applied, 0 otherwise. Lvl will never be >1
-            int conduitboost = tool.getModifierLevel(new ModifierId(CatbopThings.MODID, "celestial_conduit"));
-            // same as above but for celesteel
-            int celesteelboost = tool.getModifierLevel(new ModifierId(CatbopThings.MODID, "celesteel"));
-            if ((skylight > 0) || (conduitboost > 0)) {
+            int conduitBoost = tool.getModifierLevel(new ModifierId(CatbopThings.id("celestial_conduit")));
+            if ((skylight > 0) || (conduitBoost > 0)) {
+                // same as above but for celesteel
+                int celesteelBoost = tool.getModifierLevel(new ModifierId(CatbopThings.id("celesteel")));
                 // has a chance of restoring durability depending on several factors
-                // its kinda complicated but you can probably get a general idea by reading the equations
-                if (stack.getDamageValue() < stack.getMaxDamage() && RANDOM.nextFloat() < (((level/3.0) * 0.01 * skylight) + ((level/3.0) * 0.05 * conduitboost))) {
-                    ToolDamageUtil.repair(tool, (1 + celesteelboost));
+                // its kinda complicated, but you can probably get a general idea by reading the equations
+                float skylightChance = Mth.clamp((level/3.0f) * 0.01f * skylight, 0f, 1f);
+                float conduitChance = Mth.clamp((level/3.0f) * 0.05f * conduitBoost, 0f, 1f);
+                if (stack.getDamageValue() < stack.getMaxDamage() && RANDOM.nextFloat() <= skylightChance + conduitChance) {
+                    ToolDamageUtil.repair(tool, (1 + celesteelBoost));
                 }
             }
         }
