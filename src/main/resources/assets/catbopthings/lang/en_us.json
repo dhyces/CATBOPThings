@@ -5,6 +5,7 @@
   "block.catbopthings.prismite_block": "Block of Prismite",
   "block.catbopthings.celesteel_block": "Block of Celesteel",
   "block.catbopthings.molten_celesteel": "Molten Celesteel",
+  "fluid.catbopthings.molten_celesteel": "Molten Celesteel",
 
   "item.catbopthings.upgrade_chip": "Upgrade Chip",
   "modifier.catbopthings.chipped": "Chip Tuned",

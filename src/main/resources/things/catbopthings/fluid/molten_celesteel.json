@@ -6,7 +6,7 @@
   "block": true,
   "still_texture": "tconstruct:block/fluid/molten/still",
   "flowing_texture": "tconstruct:block/fluid/molten/flowing",
-  "color": [99,99,99],
+  "color": [224,240,208],
   "density": 2000,
   "luminosity": 10,
   "temperature": 1300,
