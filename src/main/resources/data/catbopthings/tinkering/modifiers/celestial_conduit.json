@@ -10,14 +10,17 @@
       "value": 0.25
     },
     {
-      "stat": "tconstruct:attack_damage",
+      "stat": "tconstruct:accuracy",
       "type": "add",
-      "value": 0.25
-    },
+      "value": 0.075
+    }
+  ],
+  "flags": [
+    "tconstruct:shiny"
+  ],
+  "redirects": [
     {
-      "stat": "tconstruct:mining_speed",
-      "type": "multiply_base",
-      "value": 0.05
+      "id": "tconstruct:soulbound"
     }
   ]
 }

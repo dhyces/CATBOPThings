@@ -6,34 +6,32 @@
     {
       "stat": "tconstruct:armor_toughness",
       "type": "add",
-      "value": 0.5
-    },
-    {
-      "stat": "tconstruct:attack_damage",
-      "type": "add",
       "value": 0.75
     },
     {
       "stat": "tconstruct:mining_speed",
-      "type": "multiply_base",
-      "value": 0.10
+      "type": "add",
+      "value": 0.5
     },
     {
       "stat": "tconstruct:harvest_tier",
       "value": "minecraft:netherite"
     },
     {
-      "stat": "tconstruct:velocity",
-      "type": "multiply_base",
-      "value": 0.05
-    },
-    {
       "stat": "tconstruct:accuracy",
       "type": "add",
-      "value": 0.05
+      "value": 0.075
     }
   ],
   "flags": [
     "tconstruct:indestructible"
+  ],
+  "redirects": [
+    {
+      "id": "tconstruct:piercing"
+    },
+    {
+      "id": "tconstruct:crumbling"
+    }
   ]
 }

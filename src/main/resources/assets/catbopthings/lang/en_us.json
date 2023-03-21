@@ -15,7 +15,7 @@
   "item.catbopthings.celestial_conduit": "Celestial Conduit",
   "modifier.catbopthings.celestial_conduit": "Celestial Conduit",
   "modifier.catbopthings.celestial_conduit.flavor": "Conducts Celestial Light!",
-  "modifier.catbopthings.celestial_conduit.description": "The Celestial Conduit channels starlight power into your tool.",
+  "modifier.catbopthings.celestial_conduit.description": "Enhances Celesteel and Prismite and soulbinds your tool.",
 
   "item.catbopthings.celesteel_nugget": "Celesteel nugget",
   "item.catbopthings.celesteel_ingot": "Celesteel ingot",
@@ -27,6 +27,10 @@
   "modifier.catbopthings.prismite": "Prismite",
   "modifier.catbopthings.prismite.flavor": "Restored by Celestial Light!",
   "modifier.catbopthings.prismite.description": "The Light that burns monsters restores your tool's durability!",
+
+  "modifier.catbopthings.voidjaw": "Void Jaw",
+  "modifier.catbopthings.voidjaw.flavor": "Strength of the Void Worm!",
+  "modifier.catbopthings.voidjaw.description": "Boosts damage, mining speed, and durability.",
 
   "recipe.catbopthings.modifier.prismite_requirements": "Requires the previous level and 1 more prismite than before",
   "recipe.catbopthings.modifier.celesteel_requirements": "Requires Diamond, Emerald, or Prismite.",

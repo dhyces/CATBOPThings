@@ -1,0 +1,20 @@
+{
+  "type": "tconstruct:modifier",
+  "inputs": [
+    {
+      "item": "alexsmobs:void_worm_mandible"
+    }
+  ],
+  "tools": {
+    "tag": "tconstruct:modifiable/melee_or_unarmed"
+  },
+  "slots": {
+    "upgrades": 1
+  },
+  "allow_crystal": true,
+  "result": {
+    "name": "catbopthings:voidjaw",
+    "level": 1
+  },
+  "max_level": 1
+}
