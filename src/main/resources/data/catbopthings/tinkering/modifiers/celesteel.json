@@ -11,7 +11,7 @@
     {
       "stat": "tconstruct:mining_speed",
       "type": "add",
-      "value": 0.5
+      "value": 0.25
     },
     {
       "stat": "tconstruct:harvest_tier",
@@ -25,13 +25,5 @@
   ],
   "flags": [
     "tconstruct:indestructible"
-  ],
-  "redirects": [
-    {
-      "id": "tconstruct:piercing"
-    },
-    {
-      "id": "tconstruct:crumbling"
-    }
   ]
 }

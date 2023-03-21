@@ -14,11 +14,7 @@
   "requirements": {
     "options": [
       {
-        "name": "catbopthings:prismite",
-        "level": 1
-      },
-      {
-        "tag": "tconstrucct:gems",
+        "tag": "tconstruct:gems",
         "level": 1
       }
     ],

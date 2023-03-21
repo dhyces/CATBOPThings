@@ -10,6 +10,11 @@
       "value": 0.25
     },
     {
+      "stat": "tconstruct:mining_speed",
+      "type": "add",
+      "value": 0.25
+    },
+    {
       "stat": "tconstruct:accuracy",
       "type": "add",
       "value": 0.075
@@ -17,10 +22,5 @@
   ],
   "flags": [
     "tconstruct:shiny"
-  ],
-  "redirects": [
-    {
-      "id": "tconstruct:soulbound"
-    }
   ]
 }
