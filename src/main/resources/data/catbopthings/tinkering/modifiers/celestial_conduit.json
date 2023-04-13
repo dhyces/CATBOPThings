@@ -15,12 +15,14 @@
       "value": 0.25
     },
     {
+      "stat": "tconstruct:velocity",
+      "type": "multiply_base",
+      "value": 0.025
+    },
+    {
       "stat": "tconstruct:accuracy",
       "type": "add",
-      "value": 0.075
+      "value": 0.025
     }
-  ],
-  "flags": [
-    "tconstruct:shiny"
   ]
 }

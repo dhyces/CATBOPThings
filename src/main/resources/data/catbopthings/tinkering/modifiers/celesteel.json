@@ -18,6 +18,11 @@
       "value": "minecraft:netherite"
     },
     {
+      "stat": "tconstruct:velocity",
+      "type": "multiply_base",
+      "value": 0.075
+    },
+    {
       "stat": "tconstruct:accuracy",
       "type": "add",
       "value": 0.075
