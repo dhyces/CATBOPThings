@@ -34,5 +34,7 @@
 
   "recipe.catbopthings.modifier.prismite_requirements": "Requires the previous level and 1 more prismite than before",
   "recipe.catbopthings.modifier.celesteel_requirements": "Requires Diamond, Emerald, or Prismite.",
-  "recipe.catbopthings.modifier.conduit_requirements": "Requires Prismite III and Celesteel."
+  "recipe.catbopthings.modifier.conduit_requirements": "Requires Prismite III and Celesteel.",
+
+  "material.catbopthings.celesteel": "Celesteel"
 }
