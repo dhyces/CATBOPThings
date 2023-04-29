@@ -1,5 +1,6 @@
-package catbop.catbopthings;
+package catbop.catbopthings.modifiers;
 
+import catbop.catbopthings.CatbopThings;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;

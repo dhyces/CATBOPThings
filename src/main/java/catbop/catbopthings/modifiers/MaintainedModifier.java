@@ -1,4 +1,4 @@
-package catbop.catbopthings;
+package catbop.catbopthings.modifiers;
 
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
