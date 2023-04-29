@@ -2,8 +2,10 @@ package catbop.catbopthings;
 
 import catbop.catbopthings.data.CatbopMaterialProvider;
 import catbop.catbopthings.data.CatbopModifierProvider;
+import catbop.catbopthings.modifiers.PrismiteModifier;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -27,9 +29,13 @@ public class CatbopThings {
     public CatbopThings() {
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-//        ModMobEffects.register(modBus);
+        ModMobEffects.register(modBus);
 
         modBus.addListener(this::registerModifier);
+
+        if (FMLLoader.getDist().isClient()) {
+            new CatbopThingsClient(modBus, MinecraftForge.EVENT_BUS);
+        }
 
         if (!FMLLoader.isProduction()) {
             modBus.addListener(this::datagen);

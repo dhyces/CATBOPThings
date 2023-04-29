@@ -86,6 +86,14 @@ minecraft {
     }
 }
 
+mixin {
+    add sourceSets.main, "catbopthings.refmap.json"
+    config "catbopthings.mixins.json"
+
+    debug.verbose = true
+    debug.export = true
+}
+
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
@@ -139,11 +147,6 @@ dependencies {
     runtimeOnly fg.deobf("curse.maven:alexsmobs-426558:${alexsmobs_fileid}")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
-}
-
-mixin {
-    debug.verbose = true
-    debug.export = true
 }
 
 jar {
