@@ -40,13 +40,13 @@ public class MaintainedModifier extends Modifier implements ConditionalStatModif
      * Total boost when at full durability
      */
     private static final float VELOCITY_AT_FULL = 0.05f;
-    private static final float DAMAGE_AT_FULL = 1.5f;
+    private static final float DAMAGE_AT_FULL = 3f;
 
     /**
-     * Gets the total bonus for this tool at the given durabiity
+     * Gets the total bonus for this tool at the given durability
      *
      * @param tool  Tool instance
-     * @param level Tool levle
+     * @param level Tool level
      * @return Total boost
      */
     private static float getTotalBoost(IToolStackView tool, int level) {
@@ -97,6 +97,10 @@ public class MaintainedModifier extends Modifier implements ConditionalStatModif
     public float modifyStat(IToolStackView tool, ModifierEntry modifier, LivingEntity living, FloatToolStat stat, float baseValue, float multiplier) {
         if (stat == ToolStats.VELOCITY) {
             baseValue += VELOCITY_AT_FULL * getTotalBoost(tool, modifier.getLevel()) * multiplier;
+        }
+
+        if (stat == ToolStats.ATTACK_DAMAGE) {
+            baseValue += DAMAGE_AT_FULL * getTotalBoost(tool, modifier.getLevel()) * multiplier;
         }
         return baseValue;
     }
