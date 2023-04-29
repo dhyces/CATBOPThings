@@ -20,6 +20,10 @@ public class CatbopThings {
         return new ResourceLocation(MODID, id);
     }
 
+    public static ModifierId modifierId(String id) {
+        return new ModifierId(MODID, id);
+    }
+
     public CatbopThings() {
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
 
