@@ -1,3 +1,4 @@
+//This is a modified version of Tinker's Maintianed modifier
 package catbop.catbopthings.modifiers;
 
 import net.minecraft.core.Direction;
@@ -22,16 +23,16 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 /**
- * Well maintained for Tinkers Bronze
+ * Well crafted for Tinkers brass
  */
-public class MaintainedModifier extends Modifier implements ConditionalStatModifierHook {
-    private static final Component MINING_SPEED = TConstruct.makeTranslation("modifier", "maintained.mining_speed");
-    private static final Component VELOCITY = TConstruct.makeTranslation("modifier", "maintained.velocity");
-    private static final Component ATTACK_DAMAGE = TConstruct.makeTranslation("modifier", "maintained.damage");
+public class craftedModifier extends Modifier implements ConditionalStatModifierHook {
+    private static final Component MINING_SPEED = TConstruct.makeTranslation("modifier", "crafted.mining_speed");
+    private static final Component VELOCITY = TConstruct.makeTranslation("modifier", "crafted.velocity");
+    private static final Component ATTACK_DAMAGE = TConstruct.makeTranslation("modifier", "crafted.damage");
     /**
      * Total boost when at full durability
      */
-    private static final float MINING_AT_FULL = 6;
+    private static final float MINING_AT_FULL = 5;
     /**
      * Min durability to get boost
      */
@@ -76,7 +77,7 @@ public class MaintainedModifier extends Modifier implements ConditionalStatModif
             if (boost > 0.01f) {
                 if (harvest) {
                     addFlatBoost(MINING_SPEED, boost * MINING_AT_FULL * tool.getMultiplier(ToolStats.MINING_SPEED), tooltip);
-                    //I added this one, its probably broken lol.
+
                     addFlatBoost(ATTACK_DAMAGE, boost * DAMAGE_AT_FULL * tool.getMultiplier(ToolStats.ATTACK_DAMAGE), tooltip);
                 } else {
                     addFlatBoost(VELOCITY, boost * VELOCITY_AT_FULL * tool.getMultiplier(ToolStats.VELOCITY), tooltip);
@@ -91,7 +92,6 @@ public class MaintainedModifier extends Modifier implements ConditionalStatModif
             event.setNewSpeed(event.getNewSpeed() + (MINING_AT_FULL * getTotalBoost(tool, level) * miningSpeedModifier * tool.getMultiplier(ToolStats.MINING_SPEED)));
         }
     }
-    //Do basically the same as above but for attack damage here. Max attack damage boost should be like, 3? minimum should be 0.
 
     @Override
     public float modifyStat(IToolStackView tool, ModifierEntry modifier, LivingEntity living, FloatToolStat stat, float baseValue, float multiplier) {
