@@ -1,8 +1,10 @@
-//This is a modified version of Tinker's Maintianed modifier
 package catbop.catbopthings.modifiers;
 
+import catbop.catbopthings.CatbopThings;
+import net.minecraft.Util;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.TooltipFlag;
@@ -23,12 +25,12 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 /**
- * Well crafted for Tinkers brass
+ * Well crafted for brass. This is a modified version of Tinker's Maintained modifier
  */
-public class craftedModifier extends Modifier implements ConditionalStatModifierHook {
-    private static final Component MINING_SPEED = TConstruct.makeTranslation("modifier", "crafted.mining_speed");
-    private static final Component VELOCITY = TConstruct.makeTranslation("modifier", "crafted.velocity");
-    private static final Component ATTACK_DAMAGE = TConstruct.makeTranslation("modifier", "crafted.damage");
+public class CraftedModifier extends Modifier implements ConditionalStatModifierHook {
+    private static final Component MINING_SPEED = new TranslatableComponent(Util.makeDescriptionId("modifier", CatbopThings.id("crafted.mining_speed")));
+    private static final Component VELOCITY = new TranslatableComponent(Util.makeDescriptionId("modifier", CatbopThings.id("crafted.velocity")));
+    private static final Component ATTACK_DAMAGE = new TranslatableComponent(Util.makeDescriptionId("modifier", CatbopThings.id("crafted.damage")));
     /**
      * Total boost when at full durability
      */
