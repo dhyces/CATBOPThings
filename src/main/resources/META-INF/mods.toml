@@ -19,13 +19,13 @@ license="MIT"
     modId="tconstruct"
     mandatory=true
     versionRange="[3.6.3.111,)"
-    ordering="NONE"
+    ordering="AFTER"
     side="BOTH"
 [[dependencies.catbopthings]]
     modId="jsonthings"
     mandatory=true
     versionRange="[0.4.8,)"
-    ordering="NONE"
+    ordering=""
     side="BOTH"
 [[dependencies.catbopthings]]
     modId="create"
