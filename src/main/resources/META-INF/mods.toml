@@ -25,7 +25,7 @@ license="MIT"
     modId="jsonthings"
     mandatory=true
     versionRange="[0.4.8,)"
-    ordering=""
+    ordering="NONE"
     side="BOTH"
 [[dependencies.catbopthings]]
     modId="create"
