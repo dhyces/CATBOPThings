@@ -19,7 +19,7 @@ license="MIT"
     modId="tconstruct"
     mandatory=true
     versionRange="[3.6.3.111,)"
-    ordering="NONE"
+    ordering="AFTER"
     side="BOTH"
 [[dependencies.catbopthings]]
     modId="jsonthings"
