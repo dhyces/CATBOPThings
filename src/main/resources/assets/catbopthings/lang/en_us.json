@@ -36,7 +36,7 @@
   "recipe.catbopthings.modifier.celesteel_requirements": "Requires Diamond, Emerald, or Prismite.",
   "recipe.catbopthings.modifier.conduit_requirements": "Requires Prismite III and Celesteel.",
 
-  "material.catbopthings.celesteel": "Celesteel"
+  "material.catbopthings.celesteel": "Celesteel",
 
   "modifier.catbopthings.crafted": "Well Crafted",
   "modifier.catbopthings.crafted.flavor": "Almost too good to use",
@@ -45,6 +45,6 @@
 
   "material.catbopthings.brass": "Blazing Brass",
   "material.catbopthings.brass.flavor": "Brass embued with the power of Blazes",
-  "material.catbopthings.brass.encyclopedia": "Gets significantly incrased stats at high durability.",
+  "material.catbopthings.brass.encyclopedia": "Gets significantly incrased stats at high durability."
 
 }
