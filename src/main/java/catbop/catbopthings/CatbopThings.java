@@ -2,6 +2,7 @@ package catbop.catbopthings;
 
 import catbop.catbopthings.data.CatbopMaterialProvider;
 import catbop.catbopthings.data.CatbopModifierProvider;
+import catbop.catbopthings.modifiers.CraftedModifier;
 import catbop.catbopthings.modifiers.PrismiteModifier;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
@@ -43,7 +44,8 @@ public class CatbopThings {
     }
 
     private void registerModifier(ModifierManager.ModifierRegistrationEvent event) {
-        event.registerStatic(new ModifierId(MODID, "prismite"), new PrismiteModifier());
+        event.registerStatic(CatbopThings.modifierId("prismite"), new PrismiteModifier());
+        event.registerStatic(CatbopThings.modifierId("crafted"), new CraftedModifier());
     }
 
     private void datagen(final GatherDataEvent event) {
