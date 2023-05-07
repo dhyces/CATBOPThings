@@ -37,4 +37,14 @@
   "recipe.catbopthings.modifier.conduit_requirements": "Requires Prismite III and Celesteel.",
 
   "material.catbopthings.celesteel": "Celesteel"
+
+  "modifier.catbopthings.crafted": "Well Crafted",
+  "modifier.catbopthings.crafted.flavor": "Almost too good to use",
+  "modifier.catbopthings.crafted.description": "Damage, Mining speed, and Projectile velocity boosted at high durability.",
+
+
+  "material.catbopthings.brass": "Blazing Brass",
+  "material.catbopthings.brass.flavor": "Brass embued with the power of Blazes",
+  "material.catbopthings.brass.encyclopedia": "Gets significantly incrased stats at high durability.",
+
 }
