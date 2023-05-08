@@ -1,7 +1,7 @@
 {
   "type": "tconstruct:extra_slot",
   "level_display": "tconstruct:default",
-  "always_show": true,
+  "always_show": false,
   "rarity": "rare",
   "slots": {
     "upgrades": 2

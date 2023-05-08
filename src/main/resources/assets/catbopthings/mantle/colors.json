@@ -4,6 +4,12 @@
     "prismatic": "#FDE4FD",
     "celesteel": "#FDFDE4",
     "celestial_conduit": "#807088",
-    "voidjaw": "#403040"
+    "voidjaw": "#403040",
+
+    "crafted": "#DBCC8B",
+    "brassplate": "#DBCC8B"
+  },
+  "material.catbopthings": {
+    "brass": "#DBCC8B"
   }
 }
