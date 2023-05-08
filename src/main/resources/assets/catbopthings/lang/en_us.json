@@ -42,6 +42,10 @@
   "modifier.catbopthings.crafted.flavor": "Almost too good to use",
   "modifier.catbopthings.crafted.description": "Damage, Mining speed, and Projectile velocity boosted at high durability.",
 
+  "modifier.catbopthings.crafted.mining_speed": "Well Crafted Speed",
+  "modifier.catbopthings.crafted.damage": "Well Crafted Damage",
+  "modifier.catbopthings.crafted.velocity": "Well Crafted Velocity",
+
   "modifier.catbopthings.brassplate": "Brass Plated",
   "modifier.catbopthings.brassplate.flavor": "Easy to work",
   "modifier.catbopthings.brassplate.description": "Tool can be repaired with brass.",

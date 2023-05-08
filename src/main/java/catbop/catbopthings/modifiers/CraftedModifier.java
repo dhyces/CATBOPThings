@@ -34,7 +34,7 @@ public class CraftedModifier extends Modifier implements ConditionalStatModifier
     /**
      * Total mining speed boost when at full durability
      */
-    private static final float MINING_AT_FULL = 4;
+    private static final float MINING_AT_FULL = 2;
     /**
      * Min durability to get boost
      */
@@ -42,11 +42,11 @@ public class CraftedModifier extends Modifier implements ConditionalStatModifier
     /**
      * Total velocity boost when at full durability
      */
-    private static final float VELOCITY_AT_FULL = 0.1f;
+    private static final float VELOCITY_AT_FULL = 0.05f;
     /**
      * Total damage boost when at full durability
      */
-    private static final float DAMAGE_AT_FULL = 2f;
+    private static final float DAMAGE_AT_FULL = 1.5f;
 
     /**
      * Gets the total bonus for this tool at the given durability
