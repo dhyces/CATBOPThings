@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:stat_boost",
+  "level_display": "tconstruct:single_level",
+  "rarity": "rare",
+  "stats": [
+    {
+      "stat": "tconstruct:mining_speed",
+      "type": "add",
+      "value": 0.00
+    }
+  ]
+}

@@ -42,9 +42,13 @@
   "modifier.catbopthings.crafted.flavor": "Almost too good to use",
   "modifier.catbopthings.crafted.description": "Damage, Mining speed, and Projectile velocity boosted at high durability.",
 
+  "modifier.catbopthings.brassplate": "Brass Plated",
+  "modifier.catbopthings.brassplate.flavor": "Easy to work",
+  "modifier.catbopthings.brassplate.description": "Tool can be repaired with brass.",
+
 
   "material.catbopthings.brass": "Blazing Brass",
-  "material.catbopthings.brass.flavor": "Brass embued with the power of Blazes",
+  "material.catbopthings.brass.flavor": "Brass embued with the power of blazes over a sturdy cobalt core.",
   "material.catbopthings.brass.encyclopedia": "Gets significantly incrased stats at high durability."
 
 }

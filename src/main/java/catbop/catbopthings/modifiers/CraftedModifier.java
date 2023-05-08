@@ -32,18 +32,21 @@ public class CraftedModifier extends Modifier implements ConditionalStatModifier
     private static final Component VELOCITY = new TranslatableComponent(Util.makeDescriptionId("modifier", CatbopThings.id("crafted.velocity")));
     private static final Component ATTACK_DAMAGE = new TranslatableComponent(Util.makeDescriptionId("modifier", CatbopThings.id("crafted.damage")));
     /**
-     * Total boost when at full durability
+     * Total mining speed boost when at full durability
      */
-    private static final float MINING_AT_FULL = 5;
+    private static final float MINING_AT_FULL = 4;
     /**
      * Min durability to get boost
      */
     private static final float MIN_BOOST_PERCENT = 0.5f;
     /**
-     * Total boost when at full durability
+     * Total velocity boost when at full durability
      */
-    private static final float VELOCITY_AT_FULL = 0.05f;
-    private static final float DAMAGE_AT_FULL = 3f;
+    private static final float VELOCITY_AT_FULL = 0.1f;
+    /**
+     * Total damage boost when at full durability
+     */
+    private static final float DAMAGE_AT_FULL = 2f;
 
     /**
      * Gets the total bonus for this tool at the given durability

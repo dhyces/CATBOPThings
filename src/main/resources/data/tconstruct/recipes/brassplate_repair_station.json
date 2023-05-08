@@ -1,0 +1,5 @@
+{
+  "type": "tconstruct:modifier_material_repair",
+  "modifier": "catbopthings:brassplate",
+  "repair_material": "catbopthings:brass"
+}
