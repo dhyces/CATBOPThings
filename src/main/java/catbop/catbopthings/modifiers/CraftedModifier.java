@@ -46,7 +46,7 @@ public class CraftedModifier extends Modifier implements ConditionalStatModifier
     /**
      * Total damage boost when at full durability
      */
-    private static final float DAMAGE_AT_FULL = 1.5f;
+    private static final float DAMAGE_AT_FULL = 1.333f;
 
     /**
      * Gets the total bonus for this tool at the given durability
