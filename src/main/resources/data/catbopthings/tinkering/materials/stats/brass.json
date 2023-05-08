@@ -2,7 +2,7 @@
   "stats": {
     "tconstruct:extra": {},
     "tconstruct:handle": {
-      "durability": 1.00,
+      "durability": 0.70,
       "miningSpeed": 1.00,
       "attackSpeed": 1.05,
       "attackDamage": 1.00
@@ -14,7 +14,7 @@
       "attack": 2.0
     },
     "tconstruct:limb": {
-      "durability": 800,
+      "durability": 600,
       "drawSpeed": 0.10,
       "velocity": 0.10,
       "accuracy": -0.15
