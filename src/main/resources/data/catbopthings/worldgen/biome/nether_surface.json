@@ -25,18 +25,18 @@
     "water_fog_color": 329011
   },
   "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
     [
       "catbopthings:basalt_mound",
       "catbopthings:obsidian_mound"
     ],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
     []
   ],
   "has_precipitation": false,

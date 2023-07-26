@@ -5,11 +5,12 @@ import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.levelgen.placement.BiomeFilter;
-import net.minecraft.world.level.levelgen.placement.CountPlacement;
-import net.minecraft.world.level.levelgen.placement.HeightmapPlacement;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
+import net.minecraft.world.level.levelgen.VerticalAnchor;
+import net.minecraft.world.level.levelgen.heightproviders.ConstantHeight;
+import net.minecraft.world.level.levelgen.heightproviders.HeightProvider;
+import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
 
@@ -21,8 +22,8 @@ public class PlacedFeaturesGen {
     public static Holder<PlacedFeature> obsidianMound;
 
     static void run(BootstapContext<PlacedFeature> context) {
-        basaltMound = context.register(BASALT_MOUND, new PlacedFeature(ConfiguredFeaturesGen.basaltMound, List.of(BiomeFilter.biome(), HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE_WG), CountPlacement.of(50))));
-        obsidianMound = context.register(OBSIDIAN_MOUND, new PlacedFeature(ConfiguredFeaturesGen.obsidianMound, List.of(BiomeFilter.biome(), HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE_WG), CountPlacement.of(50))));
+        basaltMound = context.register(BASALT_MOUND, new PlacedFeature(ConfiguredFeaturesGen.basaltMound, List.of(CountPlacement.of(50), HeightRangePlacement.of(ConstantHeight.of(VerticalAnchor.absolute(128))), RandomOffsetPlacement.horizontal(UniformInt.of(0, 8)), BiomeFilter.biome())));
+        obsidianMound = context.register(OBSIDIAN_MOUND, new PlacedFeature(ConfiguredFeaturesGen.obsidianMound, List.of(CountPlacement.of(50), HeightRangePlacement.of(ConstantHeight.of(VerticalAnchor.absolute(128))), RandomOffsetPlacement.horizontal(UniformInt.of(0, 8)), BiomeFilter.biome())));
     }
 
     private static ResourceKey<PlacedFeature> key(String id) {
