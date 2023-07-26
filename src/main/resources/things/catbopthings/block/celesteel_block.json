@@ -7,6 +7,6 @@
   "destroy_time": 60,
   "sound_type": "minecraft:ancient_debris",
   "item": {
-    "group": "carbopthings:catbopthings"
+    "group": "catbopthings:catbopthings"
   }  
 }

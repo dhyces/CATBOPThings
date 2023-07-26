@@ -1,6 +1,6 @@
 package catbop.catbopthings.mixin;
 
-import catbop.catbopthings.ModMobEffects;
+import catbop.catbopthings.registries.ModMobEffects;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.entity.LivingEntity;
 import org.spongepowered.asm.mixin.Mixin;

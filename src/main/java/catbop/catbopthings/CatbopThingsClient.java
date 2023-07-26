@@ -1,5 +1,6 @@
 package catbop.catbopthings;
 
+import catbop.catbopthings.registries.ModMobEffects;
 import net.minecraftforge.client.event.MovementInputUpdateEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 
@@ -9,7 +10,7 @@ public final class CatbopThingsClient {
     }
 
     private void keyPress(final MovementInputUpdateEvent event) {
-        if (event.getPlayer().hasEffect(ModMobEffects.STUN.get())) {
+        if (event.getEntity().hasEffect(ModMobEffects.STUN.get())) {
             event.getInput().down = false;
             event.getInput().up = false;
             event.getInput().left = false;

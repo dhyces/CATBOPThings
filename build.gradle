@@ -18,6 +18,7 @@ minecraft {
     runs {
         client {
             workingDirectory project.file('run')
+            ideaModule "${project.name}.main"
 
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
@@ -97,40 +98,39 @@ mixin {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
+    mavenLocal()
     maven {
-        // TCon and Mantle
-        name 'DVS1 Maven FS'
+        name 'TCon and Mantle'
         url 'https://dvs1.progwml6.com/files/maven'
     }
     maven {
-        // Cursemaven deps (misc_and_things, jsonthings, rhino)
+        name 'misc_and_things, jsonthings, rhino'
         url "https://cursemaven.com"
         content {
             includeGroup "curse.maven"
         }
     }
     maven {
-        // Registrate
-        name = 'tterrag maven'
+        name = 'Registrate'
         url = 'https://maven.tterrag.com/'
     }
     maven {
-        // location of the maven that hosts JEI files since January 2023
-        name = "Jared's maven"
+        name = "JEI"
         url = "https://maven.blamejared.com/"
     }
     maven {
-        // location of a maven mirror for JEI files, as a fallback
-        name = "ModMaven"
+        name = "JEI fallback"
         url = "https://modmaven.dev"
     }
 }
 
+jarJar.enable()
+
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
-    implementation fg.deobf("slimeknights.mantle:Mantle:${minecraft_version}-${mantle_build}")
-    implementation fg.deobf("slimeknights.tconstruct:TConstruct:${minecraft_version}-${tinkers_build}")
+//    implementation fg.deobf("slimeknights.mantle:Mantle:${minecraft_version}-${mantle_build}")
+//    implementation fg.deobf("slimeknights.tconstruct:TConstruct:${minecraft_version}-${tinkers_build}")
     implementation fg.deobf("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
     implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${minecraft_version}:${flywheel_version}")
     implementation fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
@@ -138,11 +138,15 @@ dependencies {
     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}")
 
+    compileOnly fg.deobf("dev.dhyces.biomeextensions:biomeextensions-${minecraft_version}-forge-api:${dbe_version}")
+    runtimeOnly(jarJar(fg.deobf("dev.dhyces.biomeextensions:biomeextensions-${minecraft_version}-forge:${dbe_version}")) {
+        jarJar.ranged(it, "[1.0.0, 2.0.0)")
+    })
+
     runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")
     runtimeOnly fg.deobf("curse.maven:jsonthings-541617:${jsonthings_fileid}")
-    runtimeOnly fg.deobf("curse.maven:rhino-416294:${rhino_fileid}")
-    runtimeOnly fg.deobf("curse.maven:create_things_and_misc-652202:${ctam_fileid}")
-    runtimeOnly fg.deobf("curse.maven:createadditions-439890:${createaddition_fileid}")
+//    runtimeOnly fg.deobf("curse.maven:create_things_and_misc-652202:${ctam_fileid}")
+//    runtimeOnly fg.deobf("curse.maven:createadditions-439890:${createaddition_fileid}")
     runtimeOnly fg.deobf("curse.maven:citadel-331936:${citadel_fileid}")
     runtimeOnly fg.deobf("curse.maven:alexsmobs-426558:${alexsmobs_fileid}")
 
@@ -170,4 +174,5 @@ jar.finalizedBy('reobfJar')
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+    exclude("**/catbopthings/modifiers/*")
 }

@@ -1,1 +1,0 @@
-these aren't recognized by the fluid thingpack entry and I don't know why, so I set it to be a colored template.

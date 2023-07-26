@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[40,)"
+loaderVersion="[46,)"
 issueTrackerURL=""
 license="MIT"
 [[mods]]
@@ -12,24 +12,24 @@ license="MIT"
 [[dependencies.catbopthings]]
     modId="forge"
     mandatory=true
-    versionRange="[40.1.40,)"
+    versionRange="[46.0.0,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.catbopthings]]
-    modId="tconstruct"
-    mandatory=true
-    versionRange="[3.6.3.111,)"
-    ordering="AFTER"
-    side="BOTH"
+#[[dependencies.catbopthings]]
+#    modId="tconstruct"
+#    mandatory=true
+#    versionRange="[3.6.3.111,)"
+#    ordering="AFTER"
+#    side="BOTH"
 [[dependencies.catbopthings]]
     modId="jsonthings"
     mandatory=true
-    versionRange="[0.4.8,)"
+    versionRange="[0.8.6,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.catbopthings]]
     modId="create"
     mandatory=true
-    versionRange="[0.5.0.i,)"
+    versionRange="[0.5.1,)"
     ordering="NONE"
     side="BOTH"
