@@ -1,6 +1,5 @@
 package catbop.catbopthings;
 
-import catbop.catbopthings.registries.ModBiomeSources;
 import catbop.catbopthings.registries.ModMobEffects;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,7 +24,6 @@ public class CatbopThings {
         IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModMobEffects.REGISTRY.register(modBus);
-        ModBiomeSources.REGISTRY.register(modBus);
 
 //        modBus.addListener(this::registerModifier);
 

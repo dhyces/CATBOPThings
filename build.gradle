@@ -98,7 +98,6 @@ mixin {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-    mavenLocal()
     maven {
         name 'TCon and Mantle'
         url 'https://dvs1.progwml6.com/files/maven'
@@ -137,11 +136,6 @@ dependencies {
 
     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}")
-
-    compileOnly fg.deobf("dev.dhyces.biomeextensions:biomeextensions-${minecraft_version}-forge-api:${dbe_version}")
-    runtimeOnly(jarJar(fg.deobf("dev.dhyces.biomeextensions:biomeextensions-${minecraft_version}-forge:${dbe_version}")) {
-        jarJar.ranged(it, "[1.0.0, 2.0.0)")
-    })
 
     runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")
     runtimeOnly fg.deobf("curse.maven:jsonthings-541617:${jsonthings_fileid}")
